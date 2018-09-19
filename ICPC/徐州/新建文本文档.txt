@@ -1,0 +1,39 @@
+#include "bits/stdc++.h"
+using namespace std;
+typedef long long LL;
+const int N = 1e5 + 10;
+typedef pair<int,int> P;
+
+int main() {
+    //freopen("./test/input", "r", stdin);
+    int t,n,m;
+    P p;
+    cin >> t;
+    while(t--) {
+        int ans = 0;
+        map<P,int> cnt;
+        cin >> n;
+        for(int i = 0;i < n;i++) {
+            set<P> tmp;
+            map<P,int> tmp2;
+            cin >> m;
+            while(m--) {
+                cin >> p.first >> p.second;
+                if(!tmp.count(p)) {
+                    tmp.insert(p);
+                    if(cnt.count(p)) {
+                        tmp2[p] = cnt[p] + 1;
+                        ans = max(ans,tmp2[p]);
+                    } else {
+                        tmp2[p] = 1;
+                        ans = max(ans,tmp2[p]);
+                    }
+                }
+            }
+            cnt = tmp2;
+        }
+        cout << ans << endl;
+    }
+
+    return 0;
+}
