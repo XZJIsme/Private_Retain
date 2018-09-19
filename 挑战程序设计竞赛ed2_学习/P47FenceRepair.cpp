@@ -1,34 +1,49 @@
-#include<iostream>
-typedef long long ll;
+﻿#include<iostream>
+#include<cstdio>
 using namespace std;
-ll L[20000+10];
+long long ans=0;
 int main()
 {
-	ll N=1,ans=0;
-	cin>>N;
-	for(int i=0;i<N;i++) 
-		cin>>L[i];
+	int L[20000+100],N,i;
+	scanf("%d",&N);
+	getchar();
+	for(i=0;i<N;i++)
+	{
+		scanf("%d",L+i);
+		getchar();
+	}
 	while(N>1)
 	{
-		int mii1=0,mii2=0;
-		if(L[mii1]>L[mii2])
-			swap(mii1,mii2);
-		for(int i=2;i<N;i++)
-			if(L[i]<L[mii1])
+		int min1=0,min2=1;
+		if(L[min1]>L[min2])
+		{
+			int retain=min1;
+			min1=min2;
+			min2=retain;
+		}
+		for(i=2;i<N;i++)
+		{
+			if(L[i]<L[min1])
 			{
-				mii2=mii1;
-				mii1=i;
+				min2=min1;
+				min1=i;
 			}
-			else if(L[i]<L[mii2])
-				mii2=i;
-		int t=L[mii1]+L[mii2];
-		ans+=t;
-		if(mii1==N-1)
-			swap(mii1,mii2);
-		L[mii1]=t;
-		L[mii2]=L[N-1];
+			else
+			{
+				if(L[i]<L[min2])
+					min2=i;
+			}
+		}
+		ans+=L[min1]+L[min2];
+		L[min1]=L[min1]+L[min2];
+		L[min2]=L[N-1];
 		N--;
 	}
-	cout<<ans<<endl;	
+	cout<<ans<<endl;
 	return 0;
-} 
+}
+/*	
+总结：
+模拟思路： 
+主要学会估算 
+*/
