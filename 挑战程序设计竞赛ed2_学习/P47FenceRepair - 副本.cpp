@@ -1,49 +1,26 @@
-﻿#include<iostream>
-#include<cstdio>
+#include<iostream>
+#include<queue>
 using namespace std;
-long long ans=0;
 int main()
 {
-	int L[20000+100],N,i;
-	scanf("%d",&N);
-	getchar();
-	for(i=0;i<N;i++)
+	long long N,i=0,ans,a,b;
+	cin>>N;
+	priority_queue 
+	<int,vector<int>,greater<int>> que;
+	for(;i<N;i++)
 	{
-		scanf("%d",L+i);
-		getchar();
+		cin>>ans;
+		que.push(ans);
 	}
-	while(N>1)
+	for(ans=0;N>1;N--)
 	{
-		int min1=0,min2=1;
-		if(L[min1]>L[min2])
-		{
-			int retain=min1;
-			min1=min2;
-			min2=retain;
-		}
-		for(i=2;i<N;i++)
-		{
-			if(L[i]<L[min1])
-			{
-				min2=min1;
-				min1=i;
-			}
-			else
-			{
-				if(L[i]<L[min2])
-					min2=i;
-			}
-		}
-		ans+=L[min1]+L[min2];
-		L[min1]=L[min1]+L[min2];
-		L[min2]=L[N-1];
-		N--;
-	}
+		a=que.top();
+		que.pop();
+		b=que.top();
+		que.pop();
+		ans+=a+b;
+		que.push(a+b);
+	} 
 	cout<<ans<<endl;
 	return 0;
-}
-/*	
-总结：
-模拟思路： 
-主要学会估算 
-*/
+} 
