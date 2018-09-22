@@ -3,6 +3,13 @@
 
   。。。上面那句话看着好丧啊！但是就不删了吧！还是阳光的！哈哈哈嘿嘿嘿！
   
+  
+  
+  做当代中国的大学生一定不能丧，要开心
+  
+  
+  对，开心才会赢！Yeah！       :fu:!
+  
 good good study(chinglish best!!!) & leave here one day
 
                 变出一片小清凉吧！！！
