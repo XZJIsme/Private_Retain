@@ -1,0 +1,21 @@
+A. Hard to prepare  题库链接
+通过率: 76.7 %通过人数: 507
+ B. BE, GE or NE  题库链接
+通过率: 66.92 %通过人数: 356
+ C. Cacti Lottery  题库链接
+通过率: 84.16 %通过人数: 170
+ D. Easy Math  题库链接
+通过率: 33.67 %通过人数: 99
+ E. End Fantasy VIX  题库链接
+通过率: 61.11 %通过人数: 33
+ F. Features Track  题库链接
+通过率: 88.66 %通过人数: 1087
+ G. Trace  题库链接
+通过率: 72.86 %通过人数: 663
+ H. Ryuji doesn't want to study  题库链接
+通过率: 75.87 %通过人数: 1025
+ I. Characters with Hash  题库链接
+通过率: 92.93 %通过人数: 1485
+ J. Maze Designer  题库链接
+通过率: 78.55 %通过人数: 227
+ K. Morgana Net

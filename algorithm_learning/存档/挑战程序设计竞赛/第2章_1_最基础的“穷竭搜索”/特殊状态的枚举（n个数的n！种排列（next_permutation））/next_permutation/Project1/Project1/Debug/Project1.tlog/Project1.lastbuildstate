@@ -1,0 +1,2 @@
+#TargetFrameworkVersion=v4.0:PlatformToolSet=v141:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit:WindowsTargetPlatformVersion=10.0.16299.0
+Debug|Win32|E:\ACM-ICPC\挑战程序设计竞赛\第2章_最基础的“穷竭搜索”\特殊状态的枚举（n个数的n！种排列（next_permutation））\next_permutation\Project1\|

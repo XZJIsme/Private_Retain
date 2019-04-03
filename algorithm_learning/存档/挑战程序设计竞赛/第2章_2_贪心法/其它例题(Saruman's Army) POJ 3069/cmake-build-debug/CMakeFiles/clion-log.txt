@@ -1,0 +1,41 @@
+"C:\Program Files\JetBrains\CLion 2018.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/MinGW/bin/make.exe -DCMAKE_C_COMPILER=C:/MinGW/bin/gcc.exe -DCMAKE_CXX_COMPILER=C:/MinGW/bin/g++.exe -G "CodeBlocks - MinGW Makefiles" "E:\ACM-ICPC\挑战程序设计竞赛\第2章_2_贪心法\其它例题(Saruman's Army) POJ 3069"
+-- The C compiler identification is GNU 6.3.0
+-- The CXX compiler identification is GNU 6.3.0
+-- Check for working C compiler: C:/MinGW/bin/gcc.exe
+-- Check for working C compiler: C:/MinGW/bin/gcc.exe -- broken
+CMake Error at C:/Program Files/JetBrains/CLion 2018.2.4/bin/cmake/win/share/cmake-3.12/Modules/CMakeTestCCompiler.cmake:52 (message):
+  The C compiler
+
+    "C:/MinGW/bin/gcc.exe"
+
+  is not able to compile a simple test program.
+
+  It fails with the following output:
+
+    Change Dir: E:/ACM-ICPC/鎸戞垬绋嬪簭璁捐绔炶禌/绗�2绔燺2_璐績娉�/鍏跺畠渚嬮(Saruman's Army) POJ 3069/cmake-build-debug/CMakeFiles/CMakeTmp
+    
+    Run Build Command:"C:/MinGW/bin/make.exe" "cmTC_15498/fast"
+    C:/MinGW/bin/make.exe -f CMakeFiles\cmTC_15498.dir\build.make CMakeFiles/cmTC_15498.dir/build
+    make.exe[1]: Entering directory 'E:/ACM-ICPC/鎸戞垬绋嬪簭璁捐绔炶禌/绗�2绔燺2_璐績娉�/鍏跺畠渚嬮(Saruman's Army) POJ 3069/cmake-build-debug/CMakeFiles/CMakeTmp'
+    Building C object CMakeFiles/cmTC_15498.dir/testCCompiler.c.obj
+    C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_15498.dir\testCCompiler.c.obj   -c "E:\ACM-ICPC\閹告垶鍨粙瀣碍鐠佹崘顓哥粩鐐剁\缁�?缁旂嚭2_鐠愵亜绺惧▔鏄為崗璺虹暊娓氬顣�(Saruman's Army) POJ 3069\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c"
+    gcc.exe: error: E:\ACM-ICPC\閹告垶鍨粙瀣碍鐠佹崘顓哥粩鐐剁\缁�?缁旂嚭2_鐠愵亜绺惧▔鏄為崗璺虹暊娓氬顣�(Saruman's Army) POJ 3069\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c: No such file or directory
+    gcc.exe: fatal error: no input files
+    compilation terminated.
+    CMakeFiles\cmTC_15498.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_15498.dir/testCCompiler.c.obj' failed
+    make.exe[1]: *** [CMakeFiles/cmTC_15498.dir/testCCompiler.c.obj] Error 1
+    make.exe[1]: Leaving directory 'E:/ACM-ICPC/鎸戞垬绋嬪簭璁捐绔炶禌/绗�2绔燺2_璐績娉�/鍏跺畠渚嬮(Saruman's Army) POJ 3069/cmake-build-debug/CMakeFiles/CMakeTmp'
+    Makefile:120: recipe for target 'cmTC_15498/fast' failed
+    make.exe: *** [cmTC_15498/fast] Error 2
+    
+
+  
+
+  CMake will not be able to correctly generate this project.
+Call Stack (most recent call first):
+  CMakeLists.txt:2 (project)
+
+
+-- Configuring incomplete, errors occurred!
+See also "E:/ACM-ICPC/鎸戞垬绋嬪簭璁捐绔炶禌/绗�2绔燺2_璐績娉�/鍏跺畠渚嬮(Saruman's Army) POJ 3069/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+See also "E:/ACM-ICPC/鎸戞垬绋嬪簭璁捐绔炶禌/绗�2绔燺2_璐績娉�/鍏跺畠渚嬮(Saruman's Army) POJ 3069/cmake-build-debug/CMakeFiles/CMakeError.log".
