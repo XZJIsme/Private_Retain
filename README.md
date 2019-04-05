@@ -21,3 +21,5 @@ good good study(chinglish best!!!) & leave here one day
                           (¸.·´ (¸.·’*
  
 大家都要好好做题盼望成绩变好，考个好研究生
+
+<a href="https://996.icu"><img src="https://img.shields.io/badge/link-996.icu-red.svg" alt="996.icu" /></a>
