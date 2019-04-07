@@ -68,29 +68,85 @@
 // }
 
 
-#include<cstdio>
-#include<cstring>
-#include<algorithm>
-using namespace std;
-int dp[1020][1020];
-int main()
-{
-    char a[1020],b[1020];
-    scanf("%s%s",a,b);
-    int n=strlen(a);
-    int m=strlen(b);
-    memset(dp,0x3f3f3f,sizeof(dp));
-    for (int i=0;i<1010;i++)
-        dp[i][0]=dp[0][i]=i;
-    for (int i=1;i<=n;i++)
-        for (int j=1;j<=m;j++)
-        {
-            if (a[i-1]==b[j-1])
-                dp[i][j]=dp[i-1][j-1];
-            else
-                dp[i][j]=min(min(dp[i-1][j-1],dp[i-1][j]),dp[i][j-1])+1;
-        }
+// #include<cstdio>
+// #include<cstring>
+// #include<algorithm>
+// using namespace std;
+// int dp[1020][1020];
+// int main()
+// {
+//     char a[1020],b[1020];
+//     scanf("%s%s",a,b);
+//     int n=strlen(a);
+//     int m=strlen(b);
+//     memset(dp,0x3f3f3f,sizeof(dp));
+//     for (int i=0;i<1010;i++)
+//         dp[i][0]=dp[0][i]=i;
+//     for (int i=1;i<=n;i++)
+//         for (int j=1;j<=m;j++)
+//         {
+//             if (a[i-1]==b[j-1])
+//                 dp[i][j]=dp[i-1][j-1];
+//             else
+//                 dp[i][j]=min(min(dp[i-1][j-1],dp[i-1][j]),dp[i][j-1])+1;
+//         }
  
-    printf("%d\n",dp[n][m]);
+//     printf("%d\n",dp[n][m]);
+//     return 0;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+#include<bits/stdc++.h>
+using namespace std;
+
+ 
+
+
+int main( )
+{int sum=0;
+    for(int s=1;s<(1<<15);s++)
+    {
+        for(int i=14;i>-1;i--)
+        {
+            int temp=1<<i;
+            if((s&temp)) 
+                sum++;
+        }
+    }
+cout<<sum;
     return 0;
 }
