@@ -270,82 +270,82 @@ int main()
     return 0;
 }
 
-import java.math.*; 
-import java.util.*; 
-import java.lang.Math; 
-public class Main{ 
-	private static Scanner scanner; 
-	static BigDecimal[] dp=new BigDecimal[300];
-	static BigDecimal ansBigDecimal=BigDecimal.ZERO; 
-	static void solve(int remain,int num){ 
-		if(remain<0) return;
-		if(remain==0){
-			ansBigDecimal=ansBigDecimal.add(new BigDecimal("2").pow(num));
-			return;
-		} 
-		solve(remain-1,num);
-		solve(remain-2,num+1);
-	}
-	public static void main(String[] args){  
-		for(int i=0;i<300;i++) 
-			dp[i]=BigDecimal.ZERO; 
-		for(int i=0;i<=250;i++){
-			if(i<=1)
-				solve(i,0);
-			else{
-				ansBigDecimal=dp[i-2].multiply(new BigDecimal("2")).add(dp[i-1]);
-			} 
-			dp[i]=ansBigDecimal;
-			System.out.println("\""+dp[i]+"\",");
-			ansBigDecimal=BigDecimal.ZERO;
-		}
-		scanner=new Scanner(System.in);
-		while(scanner.hasNext()){
-			System.out.println(dp[scanner.nextInt()]);
-		}
-	}
-}
+// import java.math.*; 
+// import java.util.*; 
+// import java.lang.Math; 
+// public class Main{ 
+// 	private static Scanner scanner; 
+// 	static BigDecimal[] dp=new BigDecimal[300];
+// 	static BigDecimal ansBigDecimal=BigDecimal.ZERO; 
+// 	static void solve(int remain,int num){ 
+// 		if(remain<0) return;
+// 		if(remain==0){
+// 			ansBigDecimal=ansBigDecimal.add(new BigDecimal("2").pow(num));
+// 			return;
+// 		} 
+// 		solve(remain-1,num);
+// 		solve(remain-2,num+1);
+// 	}
+// 	public static void main(String[] args){  
+// 		for(int i=0;i<300;i++) 
+// 			dp[i]=BigDecimal.ZERO; 
+// 		for(int i=0;i<=250;i++){
+// 			if(i<=1)
+// 				solve(i,0);
+// 			else{
+// 				ansBigDecimal=dp[i-2].multiply(new BigDecimal("2")).add(dp[i-1]);
+// 			} 
+// 			dp[i]=ansBigDecimal;
+// 			System.out.println("\""+dp[i]+"\",");
+// 			ansBigDecimal=BigDecimal.ZERO;
+// 		}
+// 		scanner=new Scanner(System.in);
+// 		while(scanner.hasNext()){
+// 			System.out.println(dp[scanner.nextInt()]);
+// 		}
+// 	}
+// }
 
-#include<iostream>
-#include<string>
-#include<vector>
-#include<algorithm>
-using namespace std;
-int n;
-vector<string> nums;
-vector<string> permutations;
-vector<char> chars;
-void permutation(string res,int i){
-    if(i==n){
-        permutations.push_back(res);
-        return;
-    }
-    for(auto num:nums){
-        bool isok=true;
-        for(auto item:res){
-            if(item==num[0])
-                isok=false;
-        }
-        if(isok) permutation(res+num,i+1); 
-    }
-}
-int main(){ 
-    string str;
-    cin>>str;
-    getchar();
-    for(auto c:str) chars.push_back(c);
-    sort(chars.begin(),chars.end()); 
-    n=str.length();  
-    for(int i=0;i<n;i++){
-        string res="";
-        res+=i;
-        nums.push_back(res);
-    }  
-    string res="";
-    permutation(res,0); 
-    for(auto permutation:permutations){
-        for(auto num:permutation) cout<<chars[(int)num];
-        cout<<endl;
-    }
-    return 0;
-}
+// #include<iostream>
+// #include<string>
+// #include<vector>
+// #include<algorithm>
+// using namespace std;
+// int n;
+// vector<string> nums;
+// vector<string> permutations;
+// vector<char> chars;
+// void permutation(string res,int i){
+//     if(i==n){
+//         permutations.push_back(res);
+//         return;
+//     }
+//     for(auto num:nums){
+//         bool isok=true;
+//         for(auto item:res){
+//             if(item==num[0])
+//                 isok=false;
+//         }
+//         if(isok) permutation(res+num,i+1); 
+//     }
+// }
+// int main(){ 
+//     string str;
+//     cin>>str;
+//     getchar();
+//     for(auto c:str) chars.push_back(c);
+//     sort(chars.begin(),chars.end()); 
+//     n=str.length();  
+//     for(int i=0;i<n;i++){
+//         string res="";
+//         res+=i;
+//         nums.push_back(res);
+//     }  
+//     string res="";
+//     permutation(res,0); 
+//     for(auto permutation:permutations){
+//         for(auto num:permutation) cout<<chars[(int)num];
+//         cout<<endl;
+//     }
+//     return 0;
+// }
