@@ -13,7 +13,7 @@
 good good study(chinglish best!!!) & leave here one day
 
                 变出一片小清凉吧！！！
-                 ∧＿∧
+                   ∧＿∧
                 （｡•ω•｡)つ━☆.. ・*。
                 ⊂　　 ノ 　 　　・゜+.
                  しーＪ　 　　°。+ *´¨)
